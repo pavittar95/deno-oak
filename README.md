@@ -15,5 +15,5 @@ To start the server.
 $ deno run --alow-net app.ts
 ```
 
-Deno require permissions to access network, files etc. (click here)[https://deno.land/manual/getting_started/permissions] to see more.
+Deno require permissions to access network, files etc. [click here](https://deno.land/manual/getting_started/permissions) to see more.
 
