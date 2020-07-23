@@ -1,10 +1,13 @@
 import { Application } from "https://deno.land/x/oak/mod.ts";
+import { oakCors } from "https://deno.land/x/cors/mod.ts";
 import router from "./routes/index.ts";
 
-const HOST = "0.0.0.0";
+const HOST = "localhost";
 const PORT = 7700;
 
 const app = new Application();
+
+app.use(oakCors());
 
 // Logger
 app.use(async (ctx, next) => {
