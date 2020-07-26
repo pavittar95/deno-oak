@@ -31,18 +31,6 @@ app.use(async (ctx, next) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-// // Send static content
-// app.use(async (context: any, next) => {
-//   console.log(`${Deno.cwd()}${context.request.url.pathname}`);
-//   // if (context.request.url.pathname === "/files") {
-//     await send(context, `${context.request.url.pathname}`, {
-//       root: `${Deno.cwd()}`,
-//     });
-//   // } else {
-//   //   await next();
-//   // }
-// });
-
 app.use((ctx: Context) => {
   console.log(`${red("Route Not Found")}`);
   ctx.response.status = 404;

@@ -3,9 +3,11 @@
 Deno oak framework integration for create backend app.
   - Routes are added (Done).
   - Controller added with fake data (Done).
-  - Add request validation methods (not done).
+  - Add request validation methods (done).
   - MongoDb integration (Done).
   
+Request params validation for ```POST: /user``` is added.
+
 ### Installation
 To run this app, you should have deno installed on your system [Deno](https://deno.land/#installation).
   
